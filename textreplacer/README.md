@@ -47,3 +47,13 @@
 **Скриншот редактора с примененной `Eye Comfort Theme`**
 
 ![color theme](images/2024-11-06_20-20-27.png)
+
+## **История изменения проекта с хэшами коммитов**
+
+- `77db69f81f43607d0356b6ecd1a5f993933c7381 (origin/main, origin/HEAD)` Create README.md
+- `09b90385b29c814ff193c0266454cbea8ccfe18d` default project created
+- `b1852c0d17da5fbb9fad817680096249219ab10f` replace text command added
+- `3a2454191b734e286fe66c9217884d5736676674` replace text in comments command added
+- `5b2a40ca3c5a76be9cc4058518077a5e6c52fd09` hot keys for commands added
+- `3067cc965fb2e6f2c005e10c8263cdd2a0ce624a` eye comfort theme added
+- `280c676b927f5dd350a45e5b4f431a8144332758 (HEAD -> main)` documentation added
