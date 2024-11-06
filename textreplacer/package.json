@@ -20,6 +20,10 @@
       {
         "command": "textreplacer.replaceTextInComments",
         "title": "Replace Text in Comments"
+      },
+      {
+        "command": "textreplacer.replaceRussianText",
+        "title": "Replace Russian Text"
       }
     ],
     "keybindings": [
@@ -32,7 +36,12 @@
               "command": "textreplacer.replaceTextInComments",
               "key": "Ctrl+Alt+C",
               "when": "editorTextFocus"
-          }
+            },
+            {
+              "command": "textreplacer.replaceRussianText",
+              "key": "Ctrl+Alt+K",
+              "when": "editorTextFocus"
+            }
     ],
     "themes": [
         {
