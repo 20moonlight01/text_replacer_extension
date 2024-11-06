@@ -15,6 +15,10 @@ const keyMap: { [key: string]: string } = {
     '>': 'Ю', ':': 'Ж', '"': 'Э'
 };
 
+function replaceText(text: string): string {
+    return text.split('').map(char => keyMap[char] || char).join('');
+}
+
 export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('textreplacer.replaceText', () => {
         const editor = vscode.window.activeTextEditor;
@@ -30,7 +34,29 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
+	let disposable2 = vscode.commands.registerCommand('textreplacer.replaceTextInComments', () => {
+		const editor = vscode.window.activeTextEditor;
+		if (!editor) {
+			return;
+		}
+	
+		const selection = editor.selection;
+		const selectedText = editor.document.getText(selection);
+	
+		const singleLineCommentRegex = /\/\/.*/g;
+		const multiLineCommentRegex = /\/\*[\s\S]*?\*\//g;
+	
+		const replacedText = selectedText
+			.replace(singleLineCommentRegex, (match) => replaceText(match))
+			.replace(multiLineCommentRegex, (match) => replaceText(match));
+	
+		editor.edit(editBuilder => {
+			editBuilder.replace(selection, replacedText);
+		});
+	});
+
 	context.subscriptions.push(disposable);
+	context.subscriptions.push(disposable2);
 }
 
 export function deactivate() {}

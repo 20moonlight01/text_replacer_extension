@@ -16,6 +16,10 @@
       {
         "command": "textreplacer.replaceText",
         "title": "Replace Text"
+      },
+      {
+        "command": "textreplacer.replaceTextInComments",
+        "title": "Replace Text in Comments"
       }
     ]
   },
