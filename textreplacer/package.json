@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "textreplacer.helloWorld",
-        "title": "Hello World"
+        "command": "textreplacer.replaceText",
+        "title": "Replace Text"
       }
     ]
   },
