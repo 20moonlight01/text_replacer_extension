@@ -21,6 +21,18 @@
         "command": "textreplacer.replaceTextInComments",
         "title": "Replace Text in Comments"
       }
+    ],
+    "keybindings": [
+            {
+                "command": "textreplacer.replaceText",
+                "key": "Ctrl+Alt+T",
+                "when": "editorTextFocus"
+            },
+            {
+              "command": "textreplacer.replaceTextInComments",
+              "key": "Ctrl+Alt+C",
+              "when": "editorTextFocus"
+          }
     ]
   },
   "scripts": {
