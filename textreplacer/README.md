@@ -70,3 +70,6 @@
 - `5b2a40ca3c5a76be9cc4058518077a5e6c52fd09` hot keys for commands added
 - `3067cc965fb2e6f2c005e10c8263cdd2a0ce624a` eye comfort theme added
 - `280c676b927f5dd350a45e5b4f431a8144332758 (HEAD -> main)` documentation added
+- `f88af5960360f4495300c5b8964962f947d2ddd4` history of commits added
+- `274d2cacbd4e0c9cd01180fdf6ad59a2b4472297` replace russian text command added
+- `05b4079a1ef0a7d7d789c304553468a22e877f5d (HEAD -> main)` documentation on replace russian text added
