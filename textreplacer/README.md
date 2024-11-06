@@ -1,71 +1,49 @@
-# textreplacer README
+## ***Разработчик:*** Глебова Надежда Максимовна, группа М3103
+# **Расширение: _TextReplacer_**
+## **Общее описание**
+Плагин для редактора кода ***`Visual Studio Code`*** (версия `1.95.0` и выше).
+Предоставляет возможности для замены текста, написанного в неправильной раскладке.
+В плагин входят следующие команды:
+- `Replace Text`,
+- `Replace Text In Comments`,
 
-This is the README for your extension "textreplacer". After writing up a brief description, we recommend including the following sections.
+а также отдельная цветовая тема:
+- `Eye Comfort Theme`.
+## **Описание возможностей расширения**
+### **Команды**
+#### `Replace Text`
+В выделенном фрагменте кода заменяет символы английской раскладки клавиатуры на буквы русской раскладки клавиатуры.
 
-## Features
+**Способы вызова**
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- с использованием палитры команд (Command Palette): `Ctrl` + `Shift` + `P` => `Replace Text`
+- по нажатию горячих клавиш: `Ctrl` + `Alt` + `T`
 
-For example if there is an image subfolder under your extension project workspace:
+**Примеры вызова**
+| Выделение текста: | Результат: |
+| - | - |
+| ![text selection](images/2024-11-06_20-15-00.png) | ![result of command](images/2024-11-06_20-15-50.png) |
+#### `Replace Text In Comments`
+В выделенном фрагменте кода находит однострочные и многострочные комментарии и заменяет в них символы английской раскладки клавиатуры на буквы русской раскладки клавиатуры.
 
-\!\[feature X\]\(images/feature-x.png\)
+**Способы вызова**
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- с использованием палитры команд (***Command Palette***): `Ctrl` + `Shift` + `P` => `Replace Text In Comments`
+- по нажатию горячих клавиш: `Ctrl` + `Alt` + `C`
 
-## Requirements
+**Примеры вызова**
+| Выделение текста: | Результат: |
+| - | - |
+| ![text selection](images/2024-11-06_20-17-53.png) | ![result of command](images/2024-11-06_20-18-46.png) |
+### **Темы**
+#### `Eye Comfort Theme`
+Предоставляет оформление кода в приятных для глаз пастельных оттенках. Описана в файле ***eye-comfort-theme.json***.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+**Тип:** тёмная (***dark***)
 
-## Extension Settings
+**Применение**
+- с использованием палитры команд (***Command Palette***): `Ctrl` + `Shift` + `P` => `Preferences: Color Theme` => `Eye Comfort Theme`
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+**Скриншот редактора с примененной `Eye Comfort Theme`**
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+![color theme](images/2024-11-06_20-20-27.png)
