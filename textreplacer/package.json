@@ -33,6 +33,13 @@
               "key": "Ctrl+Alt+C",
               "when": "editorTextFocus"
           }
+    ],
+    "themes": [
+        {
+            "label": "Eye Comfort Theme",
+            "uiTheme": "vs-dark",
+            "path": "./themes/eye-comfort-theme.json"
+        }
     ]
   },
   "scripts": {
